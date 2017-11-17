@@ -13,6 +13,7 @@
 		ED630ACE1FBE75C500FE59AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED630ACC1FBE75C500FE59AF /* Main.storyboard */; };
 		ED630AD01FBE75C500FE59AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED630ACF1FBE75C500FE59AF /* Assets.xcassets */; };
 		ED630AD31FBE75C500FE59AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED630AD11FBE75C500FE59AF /* LaunchScreen.storyboard */; };
+		EDE0AF0E1FBE880D005CD26E /* radioButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0AF0D1FBE880D005CD26E /* radioButtonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		ED630ACF1FBE75C500FE59AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED630AD21FBE75C500FE59AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED630AD41FBE75C500FE59AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDE0AF0D1FBE880D005CD26E /* radioButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = radioButtonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				ED630ACF1FBE75C500FE59AF /* Assets.xcassets */,
 				ED630AD11FBE75C500FE59AF /* LaunchScreen.storyboard */,
 				ED630AD41FBE75C500FE59AF /* Info.plist */,
+				EDE0AF0D1FBE880D005CD26E /* radioButtonViewController.swift */,
 			);
 			path = qrTest;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			files = (
 				ED630ACB1FBE75C500FE59AF /* ViewController.swift in Sources */,
 				ED630AC91FBE75C500FE59AF /* AppDelegate.swift in Sources */,
+				EDE0AF0E1FBE880D005CD26E /* radioButtonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +364,7 @@
 				DEVELOPMENT_TEAM = 3XHBZAYT5B;
 				INFOPLIST_FILE = qrTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.qrTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.qrTestbuttons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -376,7 +380,7 @@
 				DEVELOPMENT_TEAM = 3XHBZAYT5B;
 				INFOPLIST_FILE = qrTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.qrTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.qrTestbuttons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

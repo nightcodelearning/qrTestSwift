@@ -10,9 +10,21 @@ import UIKit
 
 class radioButtonViewController: UIViewController {
 
+
+    
+    @IBOutlet weak var labelCaptura: UILabel!
+    @IBOutlet var mybuttons: [UIButton]!
+    var valorSeleccionado = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        for button in self.mybuttons {
+            button.backgroundColor = .clear
+            button.layer.cornerRadius = 5
+            button.layer.borderWidth = 1
+            button.layer.borderColor =  UIColor.black.cgColor
+        }
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,15 +33,29 @@ class radioButtonViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //MARK actions
+    @IBAction func amountPressed(_ sender: UIButton) {
+        labelCaptura.text = ""
+        valorSeleccionado = ""
+        for button in self.mybuttons {
+            button.isSelected = false
+            button.backgroundColor = UIColor(red:1.0, green:1.0, blue:1.0, alpha:1.0)
+        }
+            sender.backgroundColor = UIColor(red:0.24, green:0.58, blue:0.97, alpha:1.0)
+            //sender.isSelected = true
+        valorSeleccionado = (sender.titleLabel?.text)!
     }
-    */
+    
+    @IBAction func accionCapturar(_ sender: UIButton) {
+        labelCaptura.text = valorSeleccionado
+    }
+    
+    
+    
+    
+
+    
+    
+ 
 
 }
